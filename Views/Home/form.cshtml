@@ -1,0 +1,220 @@
+﻿@{
+    ViewData["Title"] = "Formulario";
+}
+@*<h1>@ViewData["Title"]</h1>
+
+    <p>Use this page to detail your site's privacy policy.</p>*@
+
+
+
+
+<div class="container py-5 mb5">
+
+    <h1 class="mb-5">Formulario de Registro</h1>
+
+    @*<div class="row py-4">*@
+        @*<div class="col-md-4 order-md-2 mb-4">*@
+            @*<h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">Tu Cesta</span>
+                <span class="badge badge-primary badge-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Nombre del producto</h6>
+                        <small class="text-muted">Es lo mejor</small>
+                    </div>
+                    <span class="text-muted">€200</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Segundo producto</h6>
+                        <small class="text-muted">No te arrepentiras</small>
+                    </div>
+                    <span class="text-muted">€250</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Tercer Producto</h6>
+                        <small class="text-muted">Vas a flipar</small>
+                    </div>
+                    <span class="text-muted">€350</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Total (EUROS)</span>
+                    <strong>€800</strong>
+                </li>
+            </ul>*@
+
+            @*<form class="card p-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Codigo Promocional">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">Codigo</button>
+                    </div>
+                </div>
+            </form>*@
+        @*</div>*@
+        <div class="col-md-8 order-md-1">
+            <h4 class="mb-3">Tus Datos</h4>
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName">Nombres</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            El primer nombre es requerido.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName">Apellidos</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            El apellido es requerido.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="username">Nombre de usuario</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"></span>
+                        </div>
+                        <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
+                        <div class="invalid-feedback" style="width: 100%;">
+                            Tu nombre de usuario es requerido.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="TuEmail@example.com">
+                    <div class="invalid-feedback">
+                        Por favor ingresa un Email valido.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="address">Direccion</label>
+                    <input type="text" class="form-control" id="address" placeholder="Tu direccion aqui" required>
+                    <div class="invalid-feedback">
+                        Por Favor ingresa una direccion valida.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="address2">Direccion 2<span class="text-muted">(Optional)</span></label>
+                    <input type="text" class="form-control" id="address2" placeholder="Apartamento">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5 mb-3">
+                        <label for="country">Pais</label>
+                        <select class="custom-select d-block w-100" id="country" required>
+                            <option value="">Elegir</option>
+                            <option>España</option>
+                            <option>EEUU</option>
+                            <option>Inglaterra</option>
+                            <option>Francia</option>
+                            <option>Suecia</option>
+                            <option>Portugal</option>
+                            <option>Suiza</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="state">Provincia</label>
+                        <select class="custom-select d-block w-100" id="state" required>
+                            <option value="">Elige</option>
+                            <option>Madrid</option>
+                            <option>Barcelona</option>
+                            <option>Sevilla</option>
+                            <option>Segovia</option>
+                            <option>Toledo</option>
+                            <option>Cuenca</option>
+                            <option>Caceres</option>
+                            <option>Badajoz</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Por Favor elige una provincia.
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="zip">CP</label>
+                        <input type="text" class="form-control" id="zip" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Tu cp es requerido.
+                        </div>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="same-address">
+                    <label class="custom-control-label" for="same-address">
+                        La dirección de envío es la misma que mi dirección de facturación
+                    </label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="save-info">
+                    <label class="custom-control-label" for="save-info">Guarda esta información para la próxima vez</label>
+                </div>
+                <hr class="mb-4">
+
+                <h4 class="mb-3">Tarjeta</h4>
+
+                <div class="d-block my-3">
+                    <div class="custom-control custom-radio">
+                        <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                        <label class="custom-control-label" for="credit">Tarjeta de credito</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                        <label class="custom-control-label" for="debit">Tarjeta de debito</label>
+                    </div>
+                    @*<div class="custom-control custom-radio">
+                        <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                        <label class="custom-control-label" for="paypal">PayPal</label>
+                    </div>*@
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-name">Nombre de la tarjeta</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                        <small class="text-muted">Nombre de la tarjeta</small>
+                        <div class="invalid-feedback">
+                            Nombre de la tarjeta es requerido
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-number">Numero de tarjeta de credito</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Numero de tarjeta de credito es requerido
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-expiration">Expiracion</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Fecha de Expiracion es requerido
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-cvv">CVV</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        <div class="invalid-feedback">
+                            CVV es requerido
+                        </div>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="alert('Gracias por registrarte con nosotros')">Finalizar tu Registro</button>
+            </form>
+        </div>
+    </div>

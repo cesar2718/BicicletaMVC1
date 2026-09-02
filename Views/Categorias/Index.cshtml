@@ -1,0 +1,80 @@
+﻿@model IEnumerable<bicicletaMVC.Models.Categoria>
+
+@{
+    ViewData["Title"] = "Index";
+}
+    <div style="text-align: center">
+
+        <h1>Categorias</h1> <br />
+
+
+        <p style="text-align: center">
+
+
+            <img src="~/images/carretera.png" style="width:50%; height:220px"> <br />
+            <a href="https://localhost:44378/Bicicleta/IndexCateg/1" class="btn btn-primary">Bicicletas de Carretera</a>
+
+
+        </p> <br/> <br/>
+
+        <p style="text-align: center">
+            <img src="~/images/electrica.png" style="width:50% ; height:220px"><br />
+            <a href="https://localhost:44378/Bicicleta/IndexCateg/2" class="btn btn-primary">Bicicletas Electricas</a>
+
+
+        </p> <br /><br />
+
+
+        <p style="text-align: center">
+            <img src="~/images/montana.png" style="width:50% ; height:220px"><br />
+            <a href="https://localhost:44378/Bicicleta/IndexCateg/3" class="btn btn-primary">Bicicletas de Montaña</a>
+
+
+        </p> <br />
+
+
+
+
+    </div>
+
+
+@*<p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Bicicletas_Carretera)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Bicicletas_Montana)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Bicicletas_Electrica)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Bicicletas_Carretera)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Bicicletas_Montana)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Bicicletas_Electrica)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>*@

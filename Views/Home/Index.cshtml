@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>*@
+
+
+<div class="jumbotron bg-wizardry bg-dark text-white mb-0 radius-0">
+    <div class="container">
+
+        <h1 class="display-1 text-light">
+            AdventureWorks
+            <span class="fa fa-magic text-warning display-icon"></span>
+        </h1>
+        <span class="lead">Las mejores bicicletas del mercado</span>
+
+        @*<div class="mt-4">
+        <a asp-area="" asp-controller="Categorias" asp-action="Index"
+           class="btn btn-pill btn-wide btn-warning btn-lg my-2">
+            <span>Entra a comprar bicicletas</span>
+
+        </a>*@
+
+
+        <div class="mt-4" ,"dropdown">
+            <button class="btn btn-pill btn-wide btn-warning btn-lg my-2 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Productos
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item" asp-area="" asp-controller="Bicicleta" asp-action="Index">Productos</a>
+                <a class="dropdown-item" asp-area="" asp-controller="Categorias" asp-action="Index">Categorias</a>
+            </div>
+
+
+
+
+            <a asp-area="" asp-controller="Home" asp-action="form"
+               class="btn btn-pill btn-wide btn-outline-light btn-hover-text-dark btn-lg my-2">
+                <span>Registrate</span>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="container py-5">
+    <h1>AdventureWorks</h1>
+
+    <p>
+        AdventureWorks, es una gran empresa de fabricación multinacional.
+        La empresa fabrica y vende bicicletas de metal y de metal compuesto en los mercados de Norteamérica, Europa y Asia. Si bien su sede central de operaciones se encuentra en Bothell, Washington, con 290 empleados, en toda su base de mercado tiene distribuidos varios equipos regionales de ventas.
+        <br>
+        <br>
+
+        Tras un año fiscal con muy buenos resultados, Adventure Works Cycles está intentando ampliar su cuota de mercado dirigiendo sus ventas a sus mejores clientes, ampliando la disponibilidad de sus productos en un sitio web externo, y reduciendo los costos de venta a través de costos de producción más bajos.
+    </p>
+
+    <p><a asp-area="" asp-controller="Home" asp-action="form">Ir a Formulario</a></p>
+
+</div>
+<!-- ================================================
+ //  Slider
+ ================================================ -->
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <h3>Mas Vendidos</h3>
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="images/bic1.jpg" data-src="holder.js/900x400?theme=social" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100" src="images/bic2.jpeg" data-src="holder.js/900x400?theme=industrial" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100" src="images/bic3.jpg" data-src="holder.js/900x400?theme=industrial" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100" src="images/bic4.jpg" data-src="holder.js/900x400?theme=industrial" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100" src="images/bic5.jpg" data-src="holder.js/900x400?theme=industrial" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100" src="images/bic6.jpg" data-src="holder.js/900x400?theme=industrial" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
+        </div>
+    </div>
+
+   
+</div>
