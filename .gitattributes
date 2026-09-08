@@ -61,3 +61,8 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+# Fix GitHub language stats
+*.cshtml linguist-language=C#
+*.css linguist-vendored
+*.js linguist-vendored
+wwwroot/* linguist-vendored
