@@ -1,4 +1,4 @@
-![Bike Rental System](https://raw.githubusercontent.com/cesar2718/BicicletaMVC1/main/banner.png)
+
 
 # BicicletaMVC1 - Bike Rental Management System 🚲
 
